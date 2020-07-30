@@ -1,9 +1,9 @@
-FROM node:8
+FROM node:8.17.0
 
 LABEL version="1.0.0"
-LABEL repository="https://github.com/elstudio/actions-js-build"
-LABEL homepage="https://github.com/elstudio/actions-js-build"
-LABEL maintainer="el-studio Actions <servers+actions@el-studio.com>"
+LABEL repository="https://github.com/jonmarkgo/actions-js-build"
+LABEL homepage="https://github.com/jonmarkgo/actions-js-build"
+LABEL maintainer="jonmarkgo <jonmarkgo@gmail.com>"
 
 LABEL com.github.actions.name="GitHub Action to execute javascript build tools"
 LABEL com.github.actions.description="Executes npm install, followed by gulp or grunt (whichever has a build file)."
