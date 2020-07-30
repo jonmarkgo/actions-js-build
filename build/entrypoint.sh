@@ -25,6 +25,8 @@ gem install bundler
 echo "running bundle install"
 bundle _2.1.4_ install
 echo "Installing NPM dependencies"
+export GEM_HOME="/usr/local/lib/ruby/gems/2.5.1"
+export PATH="$GEM_HOME/bin:$PATH"
 npm config set unsafe-perm true
 npm install
 echo "Finished installing, moving on to gulp"
