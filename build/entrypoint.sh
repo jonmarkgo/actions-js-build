@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$DEBUG" == "false" ]
+if [ "$DEBUG" = "false" ]
 then
   # Carry on, but do quit on errors
   set -e
