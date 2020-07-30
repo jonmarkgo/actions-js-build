@@ -25,8 +25,9 @@ gem install bundler
 echo "running bundle install"
 bundle _2.1.4_ install
 echo "Installing NPM dependencies"
+npm config set unsafe-perm true
 npm install
-
+echo "Finished installing, moving on to gulp"
 
 # First try Gulp, then try Grunt
 # Gulpfile.js can be a file or a directory:
