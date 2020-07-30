@@ -21,7 +21,6 @@ fi
 echo "Installing Gems"
 gem update --system
 gem install bundler
-bundler update --bundler
 bundle _2.1.4_ install
 echo "Installing NPM dependencies"
 npm install
