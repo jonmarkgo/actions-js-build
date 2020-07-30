@@ -18,10 +18,11 @@ then
   cd $WD_PATH
 fi
 
-echo "Installing NPM dependencies"
-npm install
 echo "Installing Gems"
 bundle install
+echo "Installing NPM dependencies"
+npm install
+
 
 # First try Gulp, then try Grunt
 # Gulpfile.js can be a file or a directory:
