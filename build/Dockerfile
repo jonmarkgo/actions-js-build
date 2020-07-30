@@ -1,5 +1,14 @@
 FROM starefossen/ruby-node:2-8-alpine
-
+RUN apk add --no-cache \
+    autoconf \
+    automake \
+    bash \
+    g++ \
+    libc6-compat \
+    libjpeg-turbo-dev \
+    libpng-dev \
+    make \
+    nasm
 LABEL version="1.0.0"
 LABEL repository="https://github.com/jonmarkgo/actions-js-build"
 LABEL homepage="https://github.com/jonmarkgo/actions-js-build"
