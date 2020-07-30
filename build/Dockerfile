@@ -1,4 +1,4 @@
-FROM node:8.17.0
+FROM ruby-node:2-8-alpine
 
 LABEL version="1.0.0"
 LABEL repository="https://github.com/jonmarkgo/actions-js-build"
