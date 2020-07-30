@@ -18,9 +18,11 @@ then
   cd $WD_PATH
 fi
 
-echo "Installing Gems"
+echo "updating Gems"
 gem update --system
+echo "installing bundler"
 gem install bundler
+echo "running bundle install"
 bundle _2.1.4_ install
 echo "Installing NPM dependencies"
 npm install
