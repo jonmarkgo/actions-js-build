@@ -19,6 +19,9 @@ then
 fi
 
 echo "Installing Gems"
+gem update --system
+gem install bundler
+bundler update --bundler
 bundle install
 echo "Installing NPM dependencies"
 npm install
