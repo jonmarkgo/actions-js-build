@@ -9,6 +9,10 @@ RUN apk add --no-cache \
     libpng-dev \
     make \
     nasm
+    
+RUN gem install compass --no-ri --no-rdoc
+RUN npm_config_unsafe_perm=true npm install -g gulp-cli sass
+    
 LABEL version="1.0.0"
 LABEL repository="https://github.com/jonmarkgo/actions-js-build"
 LABEL homepage="https://github.com/jonmarkgo/actions-js-build"
