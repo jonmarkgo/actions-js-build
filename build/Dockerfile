@@ -8,8 +8,7 @@ RUN apk add --no-cache \
     libjpeg-turbo-dev \
     libpng-dev \
     make \
-    nasm \
-    ruby-full
+    nasm
     
 RUN gem install compass --no-ri --no-rdoc
 RUN npm_config_unsafe_perm=true npm install -g gulp-cli sass
