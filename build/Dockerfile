@@ -1,4 +1,4 @@
-FROM starefossen/ruby-node:2-8
+FROM starefossen/ruby-node:2-8-alpine
 RUN apk add --no-cache \
     autoconf \
     automake \
