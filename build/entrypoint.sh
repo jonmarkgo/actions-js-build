@@ -17,7 +17,12 @@ then
   echo "Changing dir to $WD_PATH"
   cd $WD_PATH
 fi
-
+echo "path"
+echo $PATH
+echo "pathgrep"
+echo $PATH | grep $GEM_HOME
+echo "gemhome"
+echo $GEM_HOME
 echo "updating Gems"
 gem update --system
 echo "installing bundler"
@@ -30,7 +35,12 @@ export PATH="$GEM_HOME/bin:$PATH"
 npm config set unsafe-perm true
 npm install
 echo "Finished installing, moving on to gulp"
-
+echo "path2"
+echo $PATH
+echo "pathgrep2"
+echo $PATH | grep $GEM_HOME
+echo "gemhome2"
+echo $GEM_HOME
 # First try Gulp, then try Grunt
 # Gulpfile.js can be a file or a directory:
 if [ -e "gulpfile.js" ]
