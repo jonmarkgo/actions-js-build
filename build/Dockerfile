@@ -8,8 +8,7 @@ RUN apk add --no-cache \
     libjpeg-turbo-dev \
     libpng-dev \
     make \
-    nasm \
-    ruby-compass
+    nasm
 LABEL version="1.0.0"
 LABEL repository="https://github.com/jonmarkgo/actions-js-build"
 LABEL homepage="https://github.com/jonmarkgo/actions-js-build"
