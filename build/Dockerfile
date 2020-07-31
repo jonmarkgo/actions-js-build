@@ -13,6 +13,7 @@ RUN apk add --no-cache \
 RUN gem install compass --no-ri --no-rdoc
 RUN npm_config_unsafe_perm=true npm install -g gulp-cli sass
 RUN npm install --save node-sass gulp-sass
+RUN npm install scss-lint --save-dev
 RUN find . -name '*sass*'
 
 LABEL version="1.0.0"
