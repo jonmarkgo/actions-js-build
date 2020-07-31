@@ -13,7 +13,8 @@ RUN apk add --no-cache \
 RUN gem install compass --no-ri --no-rdoc
 RUN npm_config_unsafe_perm=true npm install -g gulp-cli sass
 RUN npm install --save node-sass gulp-sass
-    
+RUN find . -name '*sass*'
+
 LABEL version="1.0.0"
 LABEL repository="https://github.com/jonmarkgo/actions-js-build"
 LABEL homepage="https://github.com/jonmarkgo/actions-js-build"
